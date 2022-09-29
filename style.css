@@ -103,6 +103,16 @@ option {
     cursor: pointer;
 }
 
+.click-color-animation {
+    animation: click-color-change 0.82s;
+}
+
+@keyframes click-color-change {
+    0% {
+        background-color: var(--hover-color);
+    }
+}
+
 .shake-animation {
     animation: shake 0.82s;
 }
@@ -120,7 +130,7 @@ option {
     40%, 60% {
       transform: translate3d(4px, 3px, 0);
     }
-  }
+}
 
 textarea {
     border-radius: ;
