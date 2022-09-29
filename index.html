@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤬 Filter</title>
+    <link rel="stylesheet" href="resetDefault.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <div class="header">
+            <p>🤬 Word Filter</p>
+        </div>
+        <div class="content">
+            <form class="word-filter-form" action="post">
+                <select name="replace-with" id="replace-with">
+                    <option>****</option>
+                    <option>🤬</option>
+                    <option>[REDACTED]</option>
+                    <option>██████</option>
+                </select>
+                <textarea name="text-to-filter" id="text-to-filter" maxlength="500" placeholder="Type here..."></textarea>
+                <button type="button" class="filter-button">
+                    <p>🤬</p>
+                </button>
+            </form>
+        </div>
+        <div class="footer">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
