@@ -2,11 +2,13 @@ let formButton = document.querySelector('.filter-button');
 formButton.addEventListener('click', filterText);
 
 async function filterText() {
-    let filteredText = await sendText("waa");
+    let textToFilter = document.getElementById('text-to-filter').value;
+    let replaceWith = document.getElementById('replace-with').value;
+    let filteredText = await sendText(textToFilter, replaceWith);
     displayFilteredText(filteredText);
 }
 
-async function sendText(textToFilter) {
+async function sendText(textToFilter, replaceWith) {
     let filteredText;
     try {
         res  = await fetch('http://localhost/php_profanity_filter_api/api/post.php', {
@@ -15,7 +17,8 @@ async function sendText(textToFilter) {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                "text_to_filter": textToFilter
+                "text_to_filter": textToFilter,
+                "replace_with": replaceWith
             })
         })
         filteredText = (await res.json()).message;

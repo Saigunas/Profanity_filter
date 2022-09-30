@@ -146,6 +146,7 @@ textarea {
 }
 
 .output-text {
+    word-wrap: break-word;
     margin-top: 1rem;
 }
 
