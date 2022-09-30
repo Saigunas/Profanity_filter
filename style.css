@@ -41,11 +41,14 @@ body {
     font-size: 2.5rem;
 }
 
+.content {
+    width: 40rem;
+    max-width: 90vw;
+}
+
 .word-filter-form {
     box-sizing: border-box;
     margin-top: 8rem;
-    width: 40rem;
-    max-width: 90vw;
     border-radius: var(--border-radius);
     display: flex;
     flex-direction: column;
@@ -140,6 +143,10 @@ textarea {
     resize: none;
     width: auto;
     height: 10rem;
+}
+
+.output-text {
+    margin-top: 1rem;
 }
 
 .footer {
