@@ -11,7 +11,7 @@ async function filterText() {
 async function sendText(textToFilter, replaceWith) {
     let filteredText;
     try {
-        res  = await fetch('http://localhost/php_profanity_filter_api/api/post.php', {
+        res  = await fetch('https://profanity-filter-php.herokuapp.com/api/index.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
