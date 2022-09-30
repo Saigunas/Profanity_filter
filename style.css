@@ -2,16 +2,16 @@
 
 :root{
     --button-font-size: 1.2rem;
-    --button-color: rgb(238, 238, 238);
+    --button-color: #E3ECF3;
 
-    --text-area-background-color: rgb(235, 255, 224);
+    --text-area-background-color: #F1FAEE;
     --border-color: black;
 
     --border-radius: 5px;
 
-    --hover-color: grey;
+    --hover-color: #C6DAE6;
 
-    --footer-background-color: rgb(235, 255, 224);
+    --footer-background-color: #F1FAEE;
     --font-family-main: 'Noto Sans KR', sans-serif;
 }
 
@@ -67,6 +67,7 @@ textarea:focus {
 }
 
 #replace-with {
+    background-color: var(--button-color);
     font-weight: 400;
     font-family: var(--font-family-main);
     text-align: center;
@@ -88,6 +89,7 @@ option {
 }
 
 .filter-button {
+    background-color: var(--button-color);
     border: 0px solid var(--border-color);
     border-radius: var(--border-radius);
     min-width: 5rem;
@@ -104,7 +106,7 @@ option {
 }
 
 .click-color-animation {
-    animation: click-color-change 0.82s;
+    animation: click-color-change 2s;
 }
 
 @keyframes click-color-change {
